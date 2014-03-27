@@ -1,3 +1,4 @@
 ipython
 ipdb
-flask
+Flask
+Flask-Babel

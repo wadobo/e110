@@ -1,0 +1,7 @@
+
+DEBUG = True
+SECRET_KEY = "YkmbX&0f2GcWDXP_kNRaK'l/"
+
+# babel
+BABEL_DEFAULT_LOCALE = 'es'
+BABEL_DEFAULT_TIMEZONE = 'Europe/Madrid'
