@@ -1,0 +1,80 @@
+/**
+ *
+ * BLUE: #0077B9
+ * BLUE LIGHT: #33A2E0
+ */
+
+.rounded {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 6px solid #0077B9;
+    background-color: white;
+    text-align: center;
+    padding-top: 180px;
+    font-weight: bold;
+    color: #0077B9;
+    display: block;
+    font-size: 25px;
+    margin: 0 auto;
+
+    transition: box-shadow 0.2s ease;
+}
+
+.rounded:hover {
+    text-decoration: none;
+    -moz-box-shadow: 4px 4px 4px #949494;
+    -webkit-box-shadow: 4px 4px 4px #949494;
+    box-shadow: 4px 4px 4px #949494;
+}
+
+.rounded.ilp {
+    background: white url("../img/ilp.png") no-repeat top center;
+    background-size: 300px auto;
+}
+
+.rounded.pregunta {
+    background: white url("../img/pregunta.png") no-repeat top center;
+    background-size: 300px auto;
+}
+
+.rounded.propuesta {
+    background: white url("../img/propuesta.png") no-repeat top center;
+    background-size: 300px auto;
+}
+
+/** NEWS **/
+.news {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.new img {
+    width: 100%;
+    height: auto;
+}
+
+.new {
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+}
+
+.new h2 {
+    color: #0077B9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.new h3 {
+    color: #666666;
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+.new p {
+    margin-top: 1em;
+    color: #444444;
+}
+
+/** END OF NEWS **/

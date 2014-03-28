@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-27 11:13+0100\n"
-"PO-Revision-Date: 2014-03-27 11:14+0100\n"
-"Last-Translator: Daniel Garcia <danigm@wadobo.com>\n"
+"POT-Creation-Date: 2014-03-28 14:47+0100\n"
+"PO-Revision-Date: 2014-03-28 14:52+0100\n"
+"Last-Translator: Daniel Garcia <danigm@wadobo.com\n"
 "Language-Team: es <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
+#: templates/header.html:12
+msgid "Login"
+msgstr "Inicia Sesión"
+
+#: templates/header.html:26
+msgid "Search"
+msgstr "Buscar"
+
 #: templates/index.html:3
 msgid "Index"
 msgstr "Portada"
+
+#: templates/navbar.html:12
+msgid "Home"
+msgstr "Portada"
+
+#: templates/navbar.html:13
+msgid "What is?"
+msgstr "¿Qué es?"
+
+#: templates/navbar.html:14
+msgid "Take part"
+msgstr "Participa"
+
+#: templates/navbar.html:15
+msgid "Initiatives"
+msgstr "Iniciativas"
+
+#: templates/navbar.html:16
+msgid "Blog"
+msgstr ""
+
+#: templates/navbar.html:17
+msgid "Cooperate"
+msgstr "Colabora"
+
+#: templates/navbar.html:18
+msgid "Who we are?"
+msgstr "¿Quiénes somos?"
 

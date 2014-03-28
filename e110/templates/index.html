@@ -1,10 +1,64 @@
 {% extends "base.html" %}
 
 {% block title %}{% trans %}Index{% endtrans %}{% endblock %}
+{% block css %}
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+{% endblock %}
 
 {% block content %}
-    <div class="jumbotron">
-        <h1>Escaño 110</h1>
-        <p class="lead"></p>
+    <div class="row buttons">
+        <div class="col-lg-4">
+            <a class="rounded ilp" href="#">
+                Presenta <br/>tu ILP
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <a class="rounded pregunta" href="#">
+                Lanza tu <br/>PREGUNTA
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <a class="rounded propuesta" href="#">
+                Haz tu <br/>PROPUESTA
+            </a>
+        </div>
+    </div>
+
+    <div class="row news">
+        <div class="col-sm-4">
+            <div class="new">
+                <h2>Título</h2>
+                <h3>Subtítulo</h3>
+                <img src="{{ url_for('static', filename='img/testimg.jpg') }}" alt="img"/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla vehicula viverra. Quisque consequat ligula lectus, ut consequat ligula porta vitae. Sed eget odio vitae massa eleifend ultricies. Fusce nec tempor orci. Integer convallis ante quis nibh ultrices aliquam. Pellentesque nec ante at nisl dignissim venenatis eu non sem. Sed interdum volutpat porta.
+                </p>
+                <a href="" class="btn btn-default">Leer más <span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="new">
+                <h2>Título</h2>
+                <h3>Subtítulo</h3>
+                <img src="{{ url_for('static', filename='img/testimg.jpg') }}" alt="img"/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla vehicula viverra. Quisque consequat ligula lectus, ut consequat ligula porta vitae. Sed eget odio vitae massa eleifend ultricies. Fusce nec tempor orci. Integer convallis ante quis nibh ultrices aliquam. Pellentesque nec ante at nisl dignissim venenatis eu non sem. Sed interdum volutpat porta.
+                </p>
+                <a href="" class="btn btn-default">Leer más <span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="new">
+                <h2>Título</h2>
+                <h3>Subtítulo</h3>
+                <img src="{{ url_for('static', filename='img/testimg.jpg') }}" alt="img"/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla vehicula viverra. Quisque consequat ligula lectus, ut consequat ligula porta vitae. Sed eget odio vitae massa eleifend ultricies. Fusce nec tempor orci. Integer convallis ante quis nibh ultrices aliquam. Pellentesque nec ante at nisl dignissim venenatis eu non sem. Sed interdum volutpat porta.
+                </p>
+                <a href="" class="btn btn-default">Leer más <span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+        </div>
     </div>
 {% endblock %}
