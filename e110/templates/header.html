@@ -1,0 +1,34 @@
+<header>
+    <div class="row">
+        <div class="col-xs-3 logo">
+            <img class="img-responsive" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"/>
+        </div>
+        <div class="col-xs-3">
+            <img class="img-responsive" src="{{ url_for('static', filename='img/htext.png') }}" alt="Ocupa tu escaño"/>
+        </div>
+        <div class="col-xs-6 text-right">
+            <div class="login">
+                <a href="#">
+                    {% trans %}Login{% endtrans %}
+                </a>
+            </div>
+            <div class="social">
+                <div class="col-md-8">
+                    <a href=""><img src="{{ url_for('static', filename='img/icons/rss.png') }}" alt="rss"/></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/icons/facebook.png') }}" alt="facebook"/></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/icons/youtube.png') }}" alt="youtube"/></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/icons/twitter.png') }}" alt="twitter"/></a>
+                </div>
+
+                <div class="col-md-4">
+                    <form method="POST" action="#" role="form" class="form form-horizontal searchbox">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="{% trans %}Search{% endtrans %}"/>
+                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
