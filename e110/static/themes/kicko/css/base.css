@@ -1,4 +1,36 @@
-/** header */
+body {
+    background-color: #DFEEF3;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn.btn-success, .progress > .progress-bar-success {
+    background-color: #76CC1E;
+    color: white;
+    border: none;
+}
+
+.btn.btn-success:hover {
+    background-color: #69B51A;
+}
+
+.progress {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.img-responsive.img-all {
+    width: 100%;
+}
+
+/* header */
+
+.navbar {
+    margin-bottom: 0;
+}
 
 .navbar-nav li.logo a {
     padding: 0.3em;
@@ -23,12 +55,12 @@
 
     transition-property: background-color;
     transition-duration: 0.2s;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #0078B9;
-    border-bottom: 1px solid #4C9CCC;
+    border-bottom: 2px solid #4C9CCC;
 }
 
 .navbar-nav > li > a.divider-right {
@@ -65,7 +97,12 @@
 .navbar-form.search-form > input.form-control:-ms-input-placeholder { color: #75796F; }
 .navbar-form.search-form > input.form-control:-moz-placeholder { color: #75796F; }
 
+
 .navbar-form.search-form > input.form-control:focus {
+    box-shadow: 0px 0px 5px #D4E9EA;
+}
+
+.navbar-form.search-form > input.form-control:hover {
     box-shadow: 0px 0px 5px #E4FAFC;
 }
 
@@ -73,6 +110,296 @@
     color: #76CC1E;
 }
 
-body {
-    background-color: #DFEEF3;
+/* index carousel */
+
+.carousel {
+    border-bottom: 2px solid white;
+}
+
+.carousel .item, .carousel {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.carousel .item h1 {
+    font-weight: bold;
+}
+
+.carousel .item p {
+    font-size: 16px;
+}
+
+.carousel .item .carousel-caption {
+    text-align: left;
+    width: 340px;
+    right: 100px;
+    left: auto;
+    top: 80px;
+}
+
+.carousel .carousel-control {
+    width: 70px;
+}
+
+.carousel .carousel-control .glyphicon-chevron-right,
+.carousel .carousel-control .glyphicon-chevron-left {
+    font-size: 60px !important;
+    line-height: 60px;
+    margin-top: -30px;
+    font-weight: normal;
+    height: 60px;
+    width: 60px;
+}
+
+/* highlighted */
+
+.highlight-background {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 0 40px 0;
+}
+
+.highlighted-title {
+    margin-right: 80px;
+}
+
+.highlighted-title h3 {
+    color: #0B1902;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 16px;
+}
+
+.highlight-background-white {
+    background-color: white;
+}
+
+.view-all {
+    float: right;
+    margin-top: 30px;
+}
+
+.highlight-right-next {
+    float: right;
+    color: #DDD;
+    margin-top: 200px;
+}
+
+.highlight-right-next .glyphicon-chevron-right {
+    font-size: 60px !important;
+    line-height: 60px;
+    margin-top: -30px;
+    font-weight: normal;
+    height: 60px;
+    width: 60px;
+}
+
+.highlighted-items {
+    margin-right: 80px;
+    font-family: "Helvetica","sans-serif";
+}
+
+.highlighted-items .highlighted-item {
+    background-color: #FFF;
+    color: #121A0D;
+    border: 5px solid #eee;
+    border-radius: 11px;
+    overflow: hidden;
+    padding: 0;
+    display: block;
+
+    transition-property: border-color;
+    transition-duration: 0.2s;
+}
+
+a.highlighted-item:hover {
+    text-decoration: none;
+    border-color: #e0e0e0;
+}
+
+.highlighted-items > div > span {
+    color: #888;
+    text-decoration: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+    padding-left: 3px;
+}
+
+.highlighted-item .content-wrapper {
+    padding: 9px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.highlighted-item h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+
+.highlighted-item:hover h3 {
+    text-decoration: underline;
+}
+
+.highlighted-item p {
+    color: #6A6A6A;
+    word-wrap: break-word;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+}
+
+.highlighted-item .progress, .staff-pick .progress {
+    margin-bottom: 0;
+}
+
+.item-stats {
+    position: absolute;
+    padding-top: 0px;
+    bottom: 9px;
+    left: 25px;
+    right: 25px;
+}
+
+.item-stats .up-progress,
+.item-stats .down-progress {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #2A2A2A;
+}
+
+.item-stats .up-progress strong {
+    color: #0B1902;
+}
+.item-stats .down-progress {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0px;
+    width: 40%;
+    float: left;
+    display: block;
+}
+
+.item-stats .time-left {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    float: right;
+    text-align:right;
+    width: 60%;
+    font-weight: normal !important;
+    display: block;
+    color: #9A9A9A;
+}
+
+/* staff-picks */
+
+.staff-pick > h3 {
+    color: #0B1902;
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+.staff-picks .view-all {
+    float: right;
+    text-align: right;
+    color: #666;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.staff-pick > .row-fluid {
+    padding-top: 16px;
+}
+
+.staff-pick .item-data h3 {
+    margin-top: 0;
+    color: #0077B9;
+    font-weight: bold;
+}
+
+.staff-pick .item-data h3 a:hover {
+    text-decoration: none;
+}
+
+.staff-pick .main-wrapper {
+    height: 210px;
+    overflow: hidden;
+}
+
+.staff-pick .item-stats {
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+.project-categories ul {
+    line-height: 25px;
+    list-style: none outside none;
+    margin: 20px 0 0 0;
+    padding-left: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+    font-size: 16px;
+    border-left: 1px solid #0077B9;
+}
+
+.project-categories ul li {
+    border-left: 3px solid transparent;
+    line-height: 25px;
+    margin-left: -1px;
+    transition-property: border-color;
+    transition-duration: 0.2s;
+}
+
+.project-categories ul li a {
+    color: #0077B9;
+    display: block;
+    padding: 44px 0 44px 20px;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.project-categories ul li:hover {
+    border-left: 3px solid #76CC1E;
+}
+
+.project-categories ul li:hover a {
+    color: #76CC1E;
+    text-decoration: none;
+}
+
+
+.highlight-background-blue {
+    background-color: #005889;
+    color: white;
+}
+
+#footer {
+    margin: 0 15%;
+}
+
+#footer ul {
+    padding: 0;
+    list-style: none outside none;
+}
+
+#footer h3 {
+    padding-bottom: 15px;
+}
+
+#footer li {
+    padding-bottom: 6px;
+}
+
+#footer a {
+    color: white;
 }
