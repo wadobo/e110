@@ -384,7 +384,7 @@ a.highlighted-item:hover {
 }
 
 #footer {
-    margin: 0 15%;
+    padding-left: 15%;
 }
 
 #footer ul {
